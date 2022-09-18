@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div class="current-time" id="current-time"></div>
+      <div class="country"></div>
+    </header>
+
+    <main>
+      <div class="current-weather">
+        <div class="top-section flex-center">
+          <div class="city" data-city></div>
+          <div class="current-temp" data-current-temp></div>
+          <div class="current-weather-icon" data-current-weather-icon></div>
+          <div class="weather-description" data-weather-description></div>
+        </div>
+        <div class="bottom-section" data-bottom-section></div>
+      </div>
+
+      <div class="future-forecast flex-center" data-future-forecast></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
